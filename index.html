@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Olympus — A Personal Operating System</title>
+<meta name="description" content="Olympus is a private personal operating system: a small company of agents that reads, remembers, researches and drafts, so one person's attention is spent only where it matters.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%230f0e0c'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' fill='%23b08d3f' text-anchor='middle'%3E%CE%A9%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#17150f;
+    --paper:#f6f1e7;
+    --gold:#a5853c;
+    --gold-soft:#bfa05a;
+    --muted:#6d675a;
+    --hairline:#d8cfba;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter',system-ui,sans-serif;
+    font-weight:300;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+    -webkit-font-smoothing:antialiased;
+  }
+  .frame{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:4rem 1.5rem 3rem;
+    max-width:760px;
+    margin:0 auto;
+    width:100%;
+  }
+  .omega{
+    font-family:'Cormorant Garamond',Georgia,serif;
+    font-size:2rem;
+    color:var(--gold);
+    line-height:1;
+    margin-bottom:2.2rem;
+  }
+  .eyebrow{
+    font-size:.68rem;
+    letter-spacing:.42em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin-bottom:1.6rem;
+    text-indent:.42em;
+  }
+  h1{
+    font-family:'Cormorant Garamond',Georgia,serif;
+    font-weight:500;
+    font-size:clamp(3.4rem,11vw,6.2rem);
+    letter-spacing:.14em;
+    text-indent:.14em;
+    line-height:1;
+    text-transform:uppercase;
+  }
+  .rule{
+    width:64px;
+    height:1px;
+    background:var(--gold);
+    margin:2.1rem auto;
+  }
+  .meander{
+    width:210px;
+    height:10px;
+    margin:0 auto 2.1rem;
+    opacity:.55;
+    background:
+      repeating-linear-gradient(90deg, var(--gold-soft) 0 1px, transparent 1px 14px),
+      repeating-linear-gradient(90deg, var(--gold-soft) 0 1px, transparent 1px 14px);
+    background-size:100% 1px, 100% 1px;
+    background-position:top left, bottom left;
+    background-repeat:no-repeat;
+  }
+  .tagline{
+    font-family:'Cormorant Garamond',Georgia,serif;
+    font-style:italic;
+    font-size:clamp(1.35rem,4vw,1.7rem);
+    color:var(--ink);
+    margin-bottom:1.4rem;
+  }
+  p.lede{
+    font-size:.98rem;
+    line-height:1.75;
+    color:#3d392f;
+    max-width:520px;
+    margin:0 auto;
+  }
+  .house{
+    margin-top:3.2rem;
+    display:flex;
+    gap:2.6rem;
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+  .house div{min-width:110px}
+  .house .name{
+    font-family:'Cormorant Garamond',Georgia,serif;
+    font-size:1.3rem;
+    font-weight:600;
+    letter-spacing:.04em;
+  }
+  .house .role{
+    margin-top:.3rem;
+    font-size:.62rem;
+    letter-spacing:.3em;
+    text-transform:uppercase;
+    color:var(--muted);
+    text-indent:.3em;
+  }
+  footer{
+    text-align:center;
+    padding:1.6rem 1rem 2rem;
+    font-size:.68rem;
+    letter-spacing:.28em;
+    text-transform:uppercase;
+    color:var(--muted);
+    text-indent:.28em;
+  }
+  footer .sep{color:var(--gold);padding:0 .6rem}
+  @media (max-width:560px){
+    .house{gap:1.6rem}
+  }
+</style>
+</head>
+<body>
+  <main class="frame">
+    <div class="omega">&#937;</div>
+    <div class="eyebrow">New York &middot; Paris</div>
+    <h1>Olympus</h1>
+    <div class="rule"></div>
+    <div class="meander" aria-hidden="true"></div>
+    <div class="tagline">A personal operating system.</div>
+    <p class="lede">
+      Olympus is a private household of agents that reads, remembers, researches
+      and drafts &mdash; so that one person&rsquo;s attention is spent only where
+      it matters. Truth in one register, joy in another, and nothing
+      brought forward that does not deserve it.
+    </p>
+    <div class="house">
+      <div>
+        <div class="name">Henry</div>
+        <div class="role">Chief of Staff</div>
+      </div>
+      <div>
+        <div class="name">Orpheus</div>
+        <div class="role">Writer</div>
+      </div>
+      <div>
+        <div class="name">Hedone</div>
+        <div class="role">Joy</div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    A private system<span class="sep">&middot;</span>Access by invitation<span class="sep">&middot;</span>&copy; MMXXVI Olympus
+  </footer>
+</body>
+</html>
