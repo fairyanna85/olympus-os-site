@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terms | Olympus</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-shell">
+      <a class="brand" href="/">Olympus</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="/">Home</a>
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="/terms/" aria-current="page">Terms</a>
+      </nav>
+    </div>
+  </header>
+  <main class="site-shell">
+    <article>
+      <h1>Terms</h1>
+      <h2>Current behavior</h2>
+      <p>Olympus currently describes a personal-assistant workflow using an authorized Gmail account. The integration requests only <code>gmail.readonly</code> and uses Gmail profile, message-list, and message-get operations. It reads Gmail content, including message bodies, and stores that content locally in SQLite for personal-assistant use. The current runner does not activate a schedule.</p>
+      <p>These terms describe verified current behavior only. They do not state a retention period, deletion process, sharing or sale policy, security standard, availability commitment, legal entity, warranty, or user population. Those matters remain unresolved under F2–F8 in the trace below. This page is not a record of legal review.</p>
+      <p>Privacy/contact route: <code>lp.olympus.assistant@gmail.com</code></p>
+      <section id="source-and-claim-trace">
+        <h2>Source and claim trace</h2>
+        <ul>
+          <li>Olympus is the named product; the current workflow is for personal-assistant use. Source: delivery plan and <code>facts-to-verify.md</code>.</li>
+          <li>Only <code>https://www.googleapis.com/auth/gmail.readonly</code> is requested. Source: delivery plan; <code>collector.py</code>; <code>live_collector.py</code>; Gmail API scopes.</li>
+          <li>Current access is limited to Gmail profile, message-list, and message-get operations; no schedule is activated. Source: delivery plan and <code>live_collector.py</code>.</li>
+          <li>Email content, including message bodies, is stored in local SQLite for personal-assistant use. Source: delivery plan; <code>collector.py</code>; <code>store.py</code>.</li>
+          <li>Read-only wording and Google-data disclosure are required to be accurate; Google requires public app links for verification. Source: Google Verification Requirements.</li>
+          <li>The public Olympus privacy/contact route is <code>lp.olympus.assistant@gmail.com</code>; this establishes a contact route only. Source: <code>facts-to-verify.md</code>.</li>
+          <li>No claim is made about retention or deletion (F2), destinations or processors (F3), storage location/protection beyond local SQLite (F4), user population or authorization model beyond the verified authorized-account workflow (F5), final privacy or terms review (F6), domain ownership and authorized-domain status (F7), or final public URLs and scope declaration (F8). Source: <code>facts-to-verify.md</code>.</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="site-shell">
+      <nav class="site-nav" aria-label="Footer navigation">
+        <a href="/">Home</a>
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="/terms/">Terms</a>
+      </nav>
+      <small>Olympus</small>
+    </div>
+  </footer>
+</body>
+</html>
