@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Olympus OS</title>
+<meta name="description" content="A cultivated world for thought and action.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath d='M6 34 L20 14 L24 20 L28 14 L42 34' fill='none' stroke='%23D5AA55' stroke-width='2'/%3E%3Cpath d='M21 34 L24 27 L27 34 Z' fill='%23D5AA55'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#11100F;
+    --surface:#171614;
+    --ivory:#FFFAF0;
+    --gold:#D5AA55;
+    --stone:#B9B1A4;
+    --rule:#3C3832;
+    --serif:"P052","Palatino Linotype","Book Antiqua",Georgia,serif;
+    --sans:"URW Gothic","Century Gothic",system-ui,-apple-system,"Segoe UI",sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{height:100%;}
+  body{
+    background:var(--ink);
+    color:var(--ivory);
+    font-family:var(--sans);
+    display:flex;
+    flex-direction:column;
+    height:100dvh;
+    overflow:hidden;
+  }
+  main{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:24px 24px 16px;
+  }
+  .symbol{width:72px;height:72px;margin-bottom:24px;}
+  .eyebrow{
+    font-size:10px;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    color:var(--stone);
+    margin-bottom:16px;
+  }
+  h1{
+    font-family:var(--serif);
+    font-weight:400;
+    font-size:40px;
+    line-height:1.15;
+    letter-spacing:0.06em;
+    color:var(--ivory);
+  }
+  .rule{
+    width:48px;
+    height:1px;
+    background:var(--gold);
+    margin:20px auto;
+  }
+  .headline{
+    font-family:var(--serif);
+    font-style:italic;
+    font-size:18px;
+    line-height:1.60;
+    color:var(--ivory);
+    max-width:34em;
+  }
+  .principals{
+    margin-top:24px;
+    font-size:14px;
+    line-height:1.55;
+    color:var(--stone);
+    letter-spacing:0.02em;
+  }
+  .principals span{color:var(--ivory);}
+  .principals .dot{color:var(--gold);padding:0 8px;}
+  footer{
+    padding:14px 24px 16px;
+    text-align:center;
+    border-top:1px solid var(--rule);
+  }
+  .footline{
+    font-size:11px;
+    line-height:1.45;
+    color:var(--stone);
+    letter-spacing:0.02em;
+  }
+  @media (max-width:480px){
+    h1{font-size:32px;}
+    main{padding:16px 16px 12px;}
+    .symbol{width:64px;height:64px;margin-bottom:20px;}
+  }
+</style>
+</head>
+<body>
+<main>
+  <svg class="symbol" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+    <path d="M4 36 L18.5 13 L24 20.5 L29.5 13 L44 36" stroke="#D5AA55" stroke-width="1.25" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M20.5 36 L24 28.5 L27.5 36 Z" fill="#D5AA55"/>
+    <line x1="4" y1="40" x2="44" y2="40" stroke="#3C3832" stroke-width="1"/>
+  </svg>
+  <h1>OLYMPUS OS</h1>
+  <div class="rule"></div>
+  <p class="headline">A cultivated world for thought and action.</p>
+  <p class="principals"><span>Elyseum</span><span class="dot">·</span><span>Agora</span><span class="dot">·</span><span>Pantheon</span></p>
+</main>
+<footer>
+  <p class="footline">Olympus OS</p>
+</footer>
+</body>
+</html>
